@@ -9,7 +9,7 @@ Webpreview helps preview a webpage. It extracts [Open Graph](http://ogp.me/), [T
 ## Preview a Web Page
 Use `web_preview` for extracting title, description and thumbnail image. It tries to extract them from Open Graph properties, if not found it falls back to Twitter Card, and so on  till Schema.  If non works it tries to extract from the webpage's content.
 
-    $ from webpreview import web_preview
+    $ from webpreview.previews import web_preview
     $ title, description, image = web_preview("aurl.com")
 
 ## Open Graph
